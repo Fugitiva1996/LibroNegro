@@ -15,7 +15,10 @@
 
     <a-scene>
         
-        AFRAME.registerComponent('video-handler',{
+ 
+        <a-assets>
+            <video id="NEGRO" autoplay loop="true" src="./2/LibroNEGRO.MOV" webkit-playsinline playsinline 
+                          AFRAME.registerComponent('video-handler',{
   init: functon(){
    let el = this.el;
    let vid = document.querySelector("#myvideo");
@@ -28,9 +31,7 @@
    });
   }
 });
-        
-        <a-assets>
-            <video id="NEGRO" autoplay loop="true" src="./2/LibroNEGRO.MOV" webkit-playsinline playsinline ></video>
+        ></video>
 
         </a-assets>
 
