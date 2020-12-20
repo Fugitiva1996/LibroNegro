@@ -14,6 +14,21 @@
      
 
     <a-scene>
+        
+        AFRAME.registerComponent('video-handler',{
+  init: functon(){
+   let el = this.el;
+   let vid = document.querySelector("#myvideo");
+   vid.pause();
+   el.addEventListener('mouseenter',function(){
+      vid.play();
+   });
+   el.addEventListener('mouseleave',function(){
+      vid.pause();
+   });
+  }
+});
+        
         <a-assets>
             <video id="NEGRO" autoplay loop="true" src="./2/LibroNEGRO.MOV" webkit-playsinline playsinline ></video>
 
